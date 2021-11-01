@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./jquery/jquery-1.12.4.js"></script>
+      
+</head>
+
+<body>
+    <input type="button" value="按钮" id="but">
+    <div></div>
+    <div></div>
+    <script>
+        $('div').css({
+           width: '100px',
+           height: '100px',
+           backgroundColor: 'pink',
+           borderRadius: '50%',
+        });
+        $('#but').click(function () {
+            $('div').css({
+                width: function (index, value) {
+                    return parseFloat(value) * 2;
+                },
+                height: function(index, value) {
+                    if (index === 1) {
+                        return parseFloat(value) * 2;
+                    }
+                }
+            })
+        })
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./jquery/jquery-1.12.4.js"></script>
+
+</head>
+
+<body>
+    <button id="but">按钮</button>
+    <div></div>
+    <script>
+        $('#but').click(function () {
+            $('div').css({
+                width: '200',
+                height: '200',
+                backgroundColor: 'pink',
+                borderRadius: '50%',
+                margin: '100px auto',
+            })
+        });
+    </script>
+</body>
+
+</html>

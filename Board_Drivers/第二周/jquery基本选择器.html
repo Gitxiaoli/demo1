@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./jquery/jquery-1.12.4.js"></script>
+</head>
+
+<body>
+    <div id="divID">ID标签,id为divID</div>
+    <p>p标签</p>
+    <p class="class">p标签,类名为P_class</p>
+    <div class="class">div标签,类名为div_class</div>
+    <script>
+        //获取id元素
+        $('#divID').css('background', 'pink');
+        // 获取p标签元素
+        $('p').css('background', 'paleturquoise');
+        // 获取类标签 代码是从上往下执行的
+        $('.class').css('background', 'palegoldenrod');
+    </script>
+</body>
+
+</html>

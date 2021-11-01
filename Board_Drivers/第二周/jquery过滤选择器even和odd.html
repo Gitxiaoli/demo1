@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./jquery/jquery-1.12.4.js"></script>
+    <style>
+        ul li {
+            width: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li>春天摇身一变</li>
+        <li>成了有秘密的人</li>
+        <li>枯萎是花瓣的秘密</li>
+        <li>调零是叶子的秘密</li>
+    </ul>
+    <script>
+        // 为偶数的 even
+        $('li:even').css('background', 'pink');
+        // 为奇数的 odd
+        $('li:odd').css('border', '1px solid #ccc');
+    </script>
+</body>
+
+</html>

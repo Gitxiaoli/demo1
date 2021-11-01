@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./jquery/jquery-1.12.4.js"></script>
+</head>
+
+<body>
+    <p id="p1">可见文本1</p>
+    <p id="p2">可见文本2</p>
+    <input type="hidden" name="可见属性">
+    <script>
+        // visible获取所有可见属性
+        var kejian = $(':visible').css('background', 'pink');
+        console.log(kejian);
+        // hidden获取隐藏属性
+        $('#p1:visible').css('display', 'none');
+        $('#p2:visible').css('visibility', 'hidden'); //hidden不能获取css样式
+        console.log($('p:hidden'));
+        console.log($('input:hidden'));
+    </script>
+</body>
+
+</html>

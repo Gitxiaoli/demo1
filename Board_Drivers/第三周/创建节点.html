@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./jquery/jquery-1.12.4.js"></script>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+        }
+    </style>
+</head>
+
+<body>
+    <input type="button" value="创建节点" id="but">
+    <div></div>
+    <script>
+        $('#but').click(function() {
+            $('div').html('<a href="javascript:;">第一个超链接</a></br> ' +
+                '<a href="javascript:;">第二个超链接</a>');
+            //     var a = $('<a href="javascript:;">第二个超链接</a>');
+            //    $('div').append(a);
+        })
+    </script>
+</body>
+
+</html>
